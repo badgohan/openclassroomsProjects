@@ -1,0 +1,51 @@
+:root {
+    --main-color: #9356DC;
+    --main-bg-color: #FF79DA;
+    --filter-bg-color: #99E2D0;
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    font-family: Roboto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.header__back {
+    display: none;
+}
+
+.header__logo {
+    display: flex;
+    padding: 14px 89px 13px 89px;
+    justify-content: center;
+}
+
+.header__logo img{
+    width: 65%;
+    padding: 0 10px;
+}
+
+
+.header__location{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    background-color: #EAEAEA;
+    gap: 15px;
+}
+
+.icon-location{
+    align-self: center;
+}
+
+
+

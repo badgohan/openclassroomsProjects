@@ -8,21 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/style.scss">
     <script src="https://kit.fontawesome.com/5c2a6a9a09.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
-    <button class="back">
-        <i></i>
+    <button class="header__back">
+        <i class="fa-solid fa-arrow-left"></i>
     </button>
-    <img src="images/logo/ohmyfood.png" class="logo">
-</header>
-<section>
-    <div class="localisation">
-        <i></i>
+    <div class="header__logo">
+        <img src="images/logo/ohmyfood.png" >
+    </div>
+    <div class="header__location">
+        <i class="fa-solid fa-location-dot icon-location"></i>
         <p>Paris, Belleville</p>
     </div>
+</header>
+<section class="titles">
     <h1>Réservez le menu qui vous convient</h1>
     <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
     <button>Explorer nos restaurants</button>
