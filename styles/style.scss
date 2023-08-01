@@ -1,3 +1,5 @@
+/********Général********/
+
 :root {
     --main-color: #9356DC;
     --main-bg-color: #FF79DA;
@@ -10,6 +12,11 @@ body{
 
 *{
     font-family: Roboto;
+}
+
+.btn{
+    /*box-shadow: 5px 5px 1px black;*/
+    border-style: none;
 }
 
 header {
@@ -90,3 +97,40 @@ header {
     font-size: 16px;
 }
 
+/*************How to***************/
+
+.howTo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+.howTo__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.howTo__list--button{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.howTo__list span{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+}
