@@ -20,6 +20,25 @@ body{
     padding: 14px 89px 13px 65px;
 }
 
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Shrikhand;
+
+}
+
+.like--menu{
+    align-self: center;
+    width: 22px;
+    height: 21px; 
+}
+
 .image__presentation img{
     width: 100%;
 }
@@ -31,7 +50,7 @@ body{
     align-items: center;
     gap: 40px;
 
-    border-radius: 30px 30px;
+    border-radius: 30px 30px 0 0;
     background-color: #F6F6F6;
     position: relative;
     bottom: 30px;
@@ -43,8 +62,14 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 12px;
-
     border-radius: 20px;
+}
+
+h2{
+    width: 90%;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Roboto;
 }
 
 .list--button{
@@ -81,4 +106,12 @@ body{
     align-self: flex-end;
     right: 15px; 
     font-weight: 700; 
+}
+
+.commander{
+    margin-top: 30px;
+}
+
+footer{
+    margin-top: -30px;
 }

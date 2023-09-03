@@ -112,7 +112,7 @@ header {
     color: #353535;
 }
 
-.discover button{
+.discover button, .commander{
     width: 218px;
     height: 50px;
     margin: 15px;
@@ -123,7 +123,7 @@ header {
 }
 
 
-.discover button p{
+.discover button p, .commander p{
     color: white;
     font-weight: normal;
     width: 100%;
@@ -226,6 +226,14 @@ header {
     bottom: 30px;
     align-self: flex-end;
     right: 15px;
+}
+
+.like:hover{
+    background: linear-gradient(0deg,#9356dc,#ff79da);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
 }
 
 /**********footer***********/
