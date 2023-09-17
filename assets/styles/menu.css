@@ -1,366 +1,117 @@
-@charset "UTF-8";
-/********Général********/
-:root {
-  --main-color: #9356DC;
-  --main-bg-color: #FF79DA;
-  --filter-bg-color: #99E2D0;
-}
+@import "style.css";
 
-body {
-  margin: 0;
+body{
+    margin: 0;
 }
-
-* {
-  font-family: Roboto;
-}
-
-h3, .card__subtitle {
-  margin: 0;
-  padding-left: 10px;
-}
-
-.card__subtitle {
-  font-weight: 300;
-}
-
-.btn {
-  /*box-shadow: 5px 5px 1px black;*/
-  border-style: none;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  margin: 0;
-}
-
-.icon--grey {
-  color: gray;
-}
-
-.icon--purple {
-  color: #9356DC;
-}
-
-/******loader*******/
-/************header**********/
-header {
-  display: flex;
-  align-items: center;
-}
-
 .header__back {
-  display: none;
+	display: flex;
+	align-items: center;
+    position: relative;
+    left: 20px;
+
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+	color: black;
 }
 
-.header__logo {
-  display: flex;
-  padding: 14px 89px 13px 89px;
-  justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+.header__logo{
+    box-shadow: none;
+    padding: 14px 89px 13px 65px;
 }
 
-.header__logo img {
-  width: 65%;
-  padding: 0 10px;
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  font-weight: 400;
-  background-color: #EAEAEA;
-  color: #353535;
-  gap: 10px;
+h1{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Shrikhand;
+
 }
 
-.icon-location {
-  align-self: center;
+.like--menu{
+    align-self: center;
+    width: 22px;
+    height: 21px; 
 }
 
-.discover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 25px 0px;
-  background-color: #F6F6F6;
+.image__presentation img{
+    width: 100%;
 }
 
-.discover h1 {
-  width: 60%;
-  margin: 0;
-  text-align: center;
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    border-radius: 30px 30px 0 0;
+    background-color: #F6F6F6;
+    position: relative;
+    bottom: 30px;
 }
 
-.discover p {
-  display: inline-block;
-  width: 75%;
-  margin: 0;
-  text-align: center;
-  font-weight: 300;
-  color: #353535;
+.menu__service{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
 }
 
-.discover button, .commander {
-  width: 218px;
-  height: 50px;
-  margin: 15px;
-  background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
-  border-radius: 50px;
-  border-style: none;
+h2{
+    width: 90%;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Roboto;
 }
 
-.discover button p, .commander p {
-  color: white;
-  font-weight: normal;
-  width: 100%;
-  font-size: 16px;
+.list--button{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    background-color: white;
+    padding: 15px;
+    width: 90%;
+    text-align: start;
+    height: 69px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
 }
 
-/*************How to***************/
-.howTo {
-  gap: 30px;
-  padding: 30px 20px;
+.list--button h3{
+    padding-left: 0;
+    font-size: 18px;
+    font-family: roboto;
+    font-weight: 500;
 }
 
-.howTo__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  padding: 0 20px;
+.list--button p{
+    margin: 0;
+    padding-top: 5px;
+    height: 19px;
+    font-weight: 300;
+    font-size: 15px;
 }
 
-.howTo__list--button {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-  height: 60px;
-  border-radius: 20px;
-  background-color: #F6F6F6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+.list--button span{
+    position: relative;
+    bottom: 20px;
+    align-self: flex-end;
+    right: 15px; 
+    font-weight: 700; 
 }
 
-.howTo__list--button:hover {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+.commander{
+    margin-top: 30px;
 }
 
-.howTo__list span {
-  background-color: var(--main-color);
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 10px;
-  color: white;
-  position: relative;
-  left: -11px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer{
+    margin-top: -30px;
 }
-
-/*******Restaurants*********/
-.restaurants {
-  background-color: #EAEAEA;
-  max-height: 2252px;
-  padding: 40px 0;
-}
-
-.restaurants__cards {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 30px;
-  gap: 10px;
-  height: 90%;
-}
-
-.restaurants__titre {
-  padding-left: 30px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  border-radius: 15px;
-  height: 324px;
-}
-
-.card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 10px;
-  height: 251px;
-  border-radius: 15px 15px 0 0;
-}
-
-.like {
-  position: relative;
-  bottom: 30px;
-  align-self: flex-end;
-  right: 15px;
-  transition: background 500ms;
-}
-
-.like:active {
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -text-fill-color: transparent;
-}
-
-/**********footer***********/
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 20px;
-}
-
-.footer__titre {
-  padding: 0;
-  font-family: Shrikhand;
-}
-
-footer h3 {
-  font-style: italic;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer ul li {
-  font-weight: 300;
-  margin-bottom: 5px;
-}
-
-.icon-space {
-  width: 20px;
-  padding-right: 10px;
-}
-
-body {
-  margin: 0;
-}
-
-.header__back {
-  display: flex;
-  align-items: center;
-  position: relative;
-  left: 20px;
-  width: 30px;
-  height: 30px;
-  text-decoration: none;
-  color: black;
-}
-
-.header__logo {
-  box-shadow: none;
-  padding: 14px 89px 13px 65px;
-}
-
-.title {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-h1 {
-  font-size: 28px;
-  font-weight: 400;
-  font-family: Shrikhand;
-}
-
-.like--menu {
-  align-self: center;
-  width: 22px;
-  height: 21px;
-}
-
-.image__presentation img {
-  width: 100%;
-}
-
-.menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  border-radius: 30px 30px 0 0;
-  background-color: #F6F6F6;
-  position: relative;
-  bottom: 30px;
-}
-
-.menu__service {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  border-radius: 20px;
-}
-
-h2 {
-  width: 90%;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: Roboto;
-}
-
-.list--button {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  background-color: white;
-  padding: 15px;
-  width: 90%;
-  text-align: start;
-  height: 69px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-}
-
-.list--button h3 {
-  padding-left: 0;
-  font-size: 18px;
-  font-family: roboto;
-  font-weight: 500;
-}
-
-.list--button p {
-  margin: 0;
-  padding-top: 5px;
-  height: 19px;
-  font-weight: 300;
-  font-size: 15px;
-}
-
-.list--button span {
-  position: relative;
-  bottom: 20px;
-  align-self: flex-end;
-  right: 15px;
-  font-weight: 700;
-}
-
-.commander {
-  margin-top: 30px;
-}
-
-footer {
-  margin-top: -30px;
-}/*# sourceMappingURL=menu.css.map */
