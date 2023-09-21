@@ -222,17 +222,27 @@ header {
     bottom: 30px;
     align-self: flex-end;
     right: 15px;
-    transition: background 500ms;
 }
 
-.like:active{
+.like__on, like__off{
+    z-index: 1;
+}
+
+.like__on{
+    transform: scaleX(0);
+    transition: background 500ms;
+    bottom: 46px; /*?????*/
+}
+
+.like__off:active + .like__on{
+    
     background: linear-gradient(0deg,#9356dc,#ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
+    transform: scaleX(1);
 }
-
 /**********footer***********/
 
 footer{
