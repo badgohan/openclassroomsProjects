@@ -224,24 +224,28 @@ header {
     right: 15px;
 }
 
-.like__on, like__off{
+.like__on, .like__off{
     z-index: 1;
 }
 
 .like__on{
-    transform: scaleX(0);
-    transition: background 500ms;
+    opacity: 0;
     bottom: 46px; /*?????*/
-}
-
-.like__off:active + .like__on{
-    
     background: linear-gradient(0deg,#9356dc,#ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
-    transform: scaleX(1);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.like__off:active + .like__on{
+    opacity: 1;
+
+}
+
+.like__off:hover + .like__on{
+    opacity: 1;
 }
 /**********footer***********/
 
