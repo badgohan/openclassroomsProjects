@@ -118,58 +118,65 @@ footer{
 }
 
 /**********Animation fondu à l'ouverture de la page*********/
-.fondu{
+.fondu__entrees, .fondu__plats, .fondu__desserts, .commander{
     opacity: 0;
     transform: translateY(20px); /* Translatez l'élément vers le bas de 20px */
     animation: fadeIn 2s ease-in-out forwards; /*Pourquoi forwards ne nous met pas à 0 d'opacity????*/
 }
 
-.fondu:nth-child(1){
+
+/**************Comment optimiser***************/
+
+.fondu__entrees:nth-child(1){
     animation-delay: 0s;
 }
 
-.fondu:nth-child(2){
+.fondu__entrees:nth-child(2){
     animation-delay: 0.5s;
 }
 
-.fondu:nth-child(3){
+.fondu__entrees:nth-child(3){
     animation-delay: 1s;
 }
 
-.fondu:nth-child(4){
+.fondu__entrees:nth-child(4){
     animation-delay: 1.5s;
 }
 
-.fondu:nth-child(5){
+.fondu__plats:nth-child(1){
     animation-delay: 2s;
 }
 
-.fondu:nth-child(6){
+.fondu__plats:nth-child(2){
     animation-delay: 2.5s;
 }
 
-.fondu:nth-child(7){
+.fondu__plats:nth-child(3){
     animation-delay: 3s;
 }
 
-.fondu:nth-child(8){
+.fondu__plats:nth-child(4){
     animation-delay: 3.5s;
 }
 
-.fondu:nth-child(9){
+.fondu__desserts:nth-child(1){
     animation-delay: 4s;
 }
 
-.fondu:nth-child(10){
+.fondu__desserts:nth-child(2){
     animation-delay: 4.5s;
 }
 
-.fondu:nth-child(11){
+.fondu__desserts:nth-child(3){
     animation-delay: 5s;
 }
 
-.fondu:nth-child(12){
+.fondu__desserts:nth-child(4){
     animation-delay: 5.5s;
+}
+
+.commander{
+    animation-delay: 6s;
 }
 
 @keyframes fadeIn {
