@@ -221,31 +221,35 @@ header {
     position: relative;
     bottom: 30px;
     align-self: flex-end;
-    right: 15px;
+    right: 35px;
 }
 
-.like__on, .like__off{
-    z-index: 1;
+.like__off{
+    z-index: 2;
 }
 
+.fa-heart{
+    position: absolute;
+
+}
 .like__on{
     opacity: 0;
-    bottom: 46px; /*?????*/
     background: linear-gradient(0deg,#9356dc,#ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
-    transition: opacity 0.5s ease-in-out;
+    transition: all 250ms infinite;
+    transform: scaleY(0);
 }
 
 .like__off:active + .like__on{
     opacity: 1;
-
 }
 
 .like__off:hover + .like__on{
     opacity: 1;
+    transform: scaleY(1);
 }
 /**********footer***********/
 
