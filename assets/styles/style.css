@@ -225,7 +225,7 @@ header {
 }
 
 .like__off{
-    z-index: 2;
+    z-index: 1;
 }
 
 .fa-heart{
@@ -239,18 +239,14 @@ header {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
-    transition: all 250ms infinite;
-    transform: scaleY(0);
+    transition: opacity 800ms;
+    z-index: 10;
 }
 
-.like__off:active + .like__on{
+.like__on:hover{
     opacity: 1;
 }
 
-.like__off:hover + .like__on{
-    opacity: 1;
-    transform: scaleY(1);
-}
 /**********footer***********/
 
 footer{
