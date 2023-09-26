@@ -4,15 +4,13 @@ body{
     margin: 0;
 }
 .header__back {
-	display: flex;
-	align-items: center;
+	display: contents;
+}
+
+.fa-arrow-left{
     position: relative;
     left: 20px;
-
-	width: 30px;
-	height: 30px;
-	text-decoration: none;
-	color: black;
+    font-size: 16px;
 }
 
 .header__logo{
