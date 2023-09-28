@@ -4,15 +4,13 @@ body{
     margin: 0;
 }
 .header__back {
-	display: flex;
-	align-items: center;
+	display: contents;
+}
+
+.fa-arrow-left{
     position: relative;
     left: 20px;
-
-	width: 30px;
-	height: 30px;
-	text-decoration: none;
-	color: black;
+    font-size: 16px;
 }
 
 .header__logo{
@@ -65,12 +63,23 @@ h1{
     border-radius: 20px;
 }
 
-h2{
+.menu__service--title{
     width: 90%;
+}
+
+h2{
     font-size: 20px;
     font-weight: 300;
     font-family: Roboto;
+    padding-bottom: 5px;
 }
+
+.ligne{
+    height: 3px;
+    width: 40px;
+    background-color: #99E2D0;
+}
+
 
 .list--button{
     display: flex;
@@ -114,4 +123,77 @@ h2{
 
 footer{
     margin-top: -30px;
+}
+
+/**********Animation fondu à l'ouverture de la page*********/
+.fondu__entrees, .fondu__plats, .fondu__desserts, .commander{
+    opacity: 0;
+    transform: translateY(20px); /* Translatez l'élément vers le bas de 20px */
+    animation: fadeIn 2s ease-in-out forwards; /*Pourquoi forwards ne nous met pas à 0 d'opacity????*/
+}
+
+
+/**************Comment optimiser***************/
+
+.fondu__entrees:nth-child(1){
+    animation-delay: 0s;
+}
+
+.fondu__entrees:nth-child(2){
+    animation-delay: 0.5s;
+}
+
+.fondu__entrees:nth-child(3){
+    animation-delay: 1s;
+}
+
+.fondu__entrees:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+.fondu__plats:nth-child(1){
+    animation-delay: 2s;
+}
+
+.fondu__plats:nth-child(2){
+    animation-delay: 2.5s;
+}
+
+.fondu__plats:nth-child(3){
+    animation-delay: 3s;
+}
+
+.fondu__plats:nth-child(4){
+    animation-delay: 3.5s;
+}
+
+.fondu__desserts:nth-child(1){
+    animation-delay: 4s;
+}
+
+.fondu__desserts:nth-child(2){
+    animation-delay: 4.5s;
+}
+
+.fondu__desserts:nth-child(3){
+    animation-delay: 5s;
+}
+
+.fondu__desserts:nth-child(4){
+    animation-delay: 5.5s;
+}
+
+.commander{
+    animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Commencez avec une opacité de 0 (transparent) */ 
+        transform: translateY(20px); /* Commencez en bas */
+    }
+    100% {
+        opacity: 1; /* Terminez avec une opacité de 1 (complètement opaque) */
+        transform: translateY(0); /* Terminez à la position d'origine */
+    }
 }

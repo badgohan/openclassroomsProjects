@@ -91,10 +91,6 @@ header {
     display: flex;
     align-items: center;
 }
-  
-.header__back {
-    display: none;
-}
 
 .header__logo {
     display: flex;
@@ -259,16 +255,30 @@ header {
     position: relative;
     bottom: 30px;
     align-self: flex-end;
-    right: 15px;
-    transition: background 500ms;
+    right: 35px;
 }
 
-.like:active{
+.like__off{
+    z-index: 1;
+}
+
+.fa-heart{
+    position: absolute;
+
+}
+.like__on{
+    opacity: 0;
     background: linear-gradient(0deg,#9356dc,#ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
+    transition: opacity 800ms;
+    z-index: 10;
+}
+
+.like__on:hover{
+    opacity: 1;
 }
 
 /**********footer***********/
