@@ -267,18 +267,22 @@ header {
 
 }
 .like__on{
-    opacity: 0;
     background: linear-gradient(0deg,#9356dc,#ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
-    transition: opacity 800ms;
     z-index: 10;
+    opacity: 0;
 }
 
 .like__on:hover{
-    opacity: 1;
+    animation: fill-like 800ms;
+}
+
+@keyframes fill-like {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
 }
 
 /**********footer***********/
@@ -311,4 +315,14 @@ footer ul li{
 .icon-space{
     width: 20px;
     padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        width: 100%;
+    }
+
+    .header__logo img {
+        width: 200px;
+    }
 }
