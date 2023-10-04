@@ -353,4 +353,36 @@ footer ul li{
         gap: 10px;
         font-size: 12px;
     }
+
+    .restaurants {
+        padding: 40px 70px ;
+    }
+
+    .restaurants__titre {
+        padding: 0;
+    }
+
+    .restaurants__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        gap: 35px 50px;
+    }
+
+    .card {
+        width: 46%;
+        height: 190px;
+    }
+
+    .card__img {
+        height: 130px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .restaurants__cards {
+        gap: 35px 70px;
+    }
 }
