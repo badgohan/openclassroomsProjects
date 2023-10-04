@@ -246,7 +246,7 @@ header {
     height: 324px;
 }
 
-.card img{
+.card__img{
     object-fit: cover;
     margin-bottom: 10px;
     height: 251px;
@@ -378,6 +378,40 @@ footer ul li{
         height: 130px;
     }
 
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        gap: 60px;
+        padding: 30px 25px;
+    }
+
+    .footer__titre {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    footer ul {
+        display: flex;
+        align-items: end;
+        margin: 0;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    footer ul li {
+        margin-bottom: 0;
+    }
+
+    .icon-space {
+        padding-right: 0;
+    }
+
+    .footer__list--decalage {
+        padding-left: 15px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -385,4 +419,7 @@ footer ul li{
     .restaurants__cards {
         gap: 35px 70px;
     }
+
+ 
+
 }
