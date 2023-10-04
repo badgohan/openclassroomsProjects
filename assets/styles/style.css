@@ -132,13 +132,15 @@ header {
 
     background-color: #F6F6F6;
 }
-.discover h1{
+.discover__title{
     width: 60%;
     margin: 0;
     text-align: center;
+    font-weight: 700;
+    font-size: 25px;
 }
 
-.discover p{
+.discover__subtitle{
     display: inline-block;
     width: 75%;
     margin: 0;
@@ -267,18 +269,22 @@ header {
 
 }
 .like__on{
-    opacity: 0;
     background: linear-gradient(0deg,#9356dc,#ff79da);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -text-fill-color: transparent;
-    transition: opacity 800ms;
     z-index: 10;
+    opacity: 0;
 }
 
 .like__on:hover{
-    opacity: 1;
+    animation: fill-like 800ms;
+}
+
+@keyframes fill-like {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
 }
 
 /**********footer***********/
@@ -294,7 +300,7 @@ footer{
     font-family: Shrikhand;
 }
 
-footer h3{
+footer h1{
     font-style: italic;
 }
 
@@ -311,4 +317,72 @@ footer ul li{
 .icon-space{
     width: 20px;
     padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header__logo {
+        width: 100%;
+    }
+
+    .header__logo img {
+        width: 200px;
+    }
+
+    .discover__title{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .discover__subtitle {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .howTo {
+        padding: 30px 70px;
+        gap: 12px;
+    }
+
+    .howTo__list {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .howTo__list--button {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .restaurants {
+        padding: 40px 70px ;
+    }
+
+    .restaurants__titre {
+        padding: 0;
+    }
+
+    .restaurants__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        gap: 35px 50px;
+    }
+
+    .card {
+        width: 46%;
+        height: 190px;
+    }
+
+    .card__img {
+        height: 130px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .restaurants__cards {
+        gap: 35px 70px;
+    }
 }
