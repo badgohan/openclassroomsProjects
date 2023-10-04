@@ -253,6 +253,28 @@ header {
     border-radius: 15px 15px 0 0;
 }
 
+.card__new {
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+
+    padding: 5px 3px;
+	font-size: 13px;
+	text-align: center;
+    background-color: #99E2D0;
+    color: #008766;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
+
+	align-self: flex-end;
+    position: relative;
+	bottom: 290px;
+	right: 12px;
+}
+
+.card__new p {
+    margin: 0;
+}
+
 .like{
     position: relative;
     bottom: 30px;
@@ -376,6 +398,10 @@ footer ul li{
 
     .card__img {
         height: 130px;
+    }
+
+    .card__new {
+        bottom: 170px;
     }
 
     footer {
