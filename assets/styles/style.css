@@ -160,6 +160,11 @@ header {
     border-style: none;
 }
 
+.discover button:hover, .commander:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35); 
+}
+
 
 .discover button p, .commander p{
     color: white;
@@ -243,14 +248,36 @@ header {
     text-decoration: none;
     background-color: white;
     border-radius: 15px;
-    height: 324px;
+    height: 260px;
 }
 
 .card__img{
     object-fit: cover;
     margin-bottom: 10px;
-    height: 251px;
+    height: 201px;
     border-radius: 15px 15px 0 0;
+}
+
+.card__new {
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+
+    padding: 5px 3px;
+	font-size: 13px;
+	text-align: center;
+    background-color: #99E2D0;
+    color: #008766;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
+
+	align-self: flex-end;
+    position: relative;
+	bottom: 240px;
+	right: 12px;
+}
+
+.card__new p {
+    margin: 0;
 }
 
 .like{
@@ -297,7 +324,10 @@ footer{
 
 .footer__titre{
     padding: 0;
+    margin: 0;
     font-family: Shrikhand;
+    font-size: 27px;
+    font-weight: 200;
 }
 
 footer h1{
@@ -376,6 +406,10 @@ footer ul li{
 
     .card__img {
         height: 130px;
+    }
+
+    .card__new {
+        bottom: 170px;
     }
 
     footer {
