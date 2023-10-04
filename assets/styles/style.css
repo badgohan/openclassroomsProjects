@@ -246,7 +246,7 @@ header {
     height: 324px;
 }
 
-.card img{
+.card__img{
     object-fit: cover;
     margin-bottom: 10px;
     height: 251px;
