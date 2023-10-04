@@ -248,13 +248,13 @@ header {
     text-decoration: none;
     background-color: white;
     border-radius: 15px;
-    height: 324px;
+    height: 260px;
 }
 
 .card__img{
     object-fit: cover;
     margin-bottom: 10px;
-    height: 251px;
+    height: 201px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -272,7 +272,7 @@ header {
 
 	align-self: flex-end;
     position: relative;
-	bottom: 290px;
+	bottom: 240px;
 	right: 12px;
 }
 
