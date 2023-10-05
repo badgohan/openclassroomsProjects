@@ -80,7 +80,7 @@ h2{
 .ligne{
     height: 3px;
     width: 40px;
-    background-color: #99E2D0;
+    background-color: var(--filter-bg-color);
 }
 
 
