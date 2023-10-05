@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/5c2a6a9a09.js" crossorigin="anonymous"></script>
 </head>
-<!---<div class="loader__background">
-    <div class="loader"></div>
-</div>--->
+
 
 <body>
+    <div class="loader__background">
+        <div class="loader"></div>
+    </div>
     <header>
         <div class="header__logo">
-            <img src="assets/images/logo/ohmyfood.png">
+            <img src="assets/images/logo/ohmyfood.png" alt="logo oh my food">
         </div>
     </header>
     <div class="location">
@@ -31,21 +32,21 @@
         <p class="discover__title">Réservez le menu qui vous convient</p>
         <p class="discover__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <button class="btn">
-            <p>Explorer nos restaurants</p>
+            <span>Explorer nos restaurants</span>
         </button>
     </section>
     <section class="howTo">
         <h2>Fonctionnement</h2>
         <div class="howTo__list">
-            <button class="howTo__list--button btn"><span>1</span><i
+            <button class="howTo__list--button btn"><span class="howTo__list--button number">1</span><i
                     class="fa-solid fa-mobile-screen-button icon--grey"></i>
-                <p>Choisissez un restaurant</p>
+                <span>Choisissez un restaurant</span>
             </button>
-            <button class="howTo__list--button btn"><span>2</span><i class="fa-solid fa-bars icon--grey"></i>
-                <p>Composez votre menu</p>
+            <button class="howTo__list--button btn"><span class="howTo__list--button number">2</span><i class="fa-solid fa-bars icon--grey"></i>
+                <span>Composez votre menu</span>
             </button>
-            <button class="howTo__list--button btn"><span>3</span><i class="fa-solid fa-store icon--purple"></i>
-                <p>Dégustez au restaurant</p>
+            <button class="howTo__list--button btn"><span class="howTo__list--button number">3</span><i class="fa-solid fa-store icon--purple"></i>
+                <span>Dégustez au restaurant</span>
             </button>
         </div>
     </section>
@@ -78,7 +79,7 @@
                     <p>Nouveau</p>
                 </div>
             </a>
-            <a href="./restaurants/menu-francaise.html" href="#" class="card">
+            <a href="./restaurants/menu-francaise.html" class="card">
                 <img class="card__img" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant deux lits">
                 <h3 class="card__title">A la française</h3>

@@ -66,7 +66,7 @@ h2{
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    animation: spin 2.9s linear forwards;
+    animation: spin 2.5s linear forwards;
     opacity: 1;
 }
   
@@ -77,9 +77,9 @@ h2{
 }
 
 @keyframes spin-background {
-    0% { opacity: opacity(1);}
+    0% { opacity: 1;}
     80% {transform: scaleX(1); }
-    100% {opacity: opacity(0);}
+    100% {opacity: 0;}
     100% {transform: scaleX(0);}
     
 }
@@ -171,7 +171,7 @@ header a {
 }
 
 
-.discover button p, .commander p{
+.discover button span, .commander span{
     color: white;
     font-weight: normal;
     width: 100%;
@@ -211,7 +211,7 @@ header a {
 }
 
 
-.howTo__list span{
+.howTo__list--button .number{
     background-color: var(--main-color);
     border-radius: 50%;
     width: 20px;
