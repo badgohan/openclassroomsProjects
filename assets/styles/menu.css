@@ -227,9 +227,11 @@ footer{
     .menu__title{
         max-width: 307px;
     }
-    
+
     .like__menu {
         position: relative;
         right: 0;
     }
+
+    
 }
