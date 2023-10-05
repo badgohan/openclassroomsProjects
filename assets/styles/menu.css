@@ -136,8 +136,7 @@ footer{
     animation: fadeIn 2s ease-in-out forwards; /*Pourquoi forwards ne nous met pas à 0 d'opacity????*/
 }
 
-
-/**************Comment optimiser***************/
+/********************   Animation fondu *****************/
 
 .fondu__entrees:nth-child(1){
     animation-delay: 0s;
@@ -153,6 +152,10 @@ footer{
 
 .fondu__entrees:nth-child(4){
     animation-delay: 1.5s;
+}
+
+.fondu__entrees:nth-child(5){
+    animation-delay: 1.7s;
 }
 
 .fondu__plats:nth-child(1){
