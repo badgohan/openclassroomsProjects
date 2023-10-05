@@ -93,6 +93,10 @@ header {
     margin: auto;
 }
 
+header a {
+    color: black;
+}
+
 .header__logo {
     display: flex;
     padding: 14px 89px 13px 89px;
