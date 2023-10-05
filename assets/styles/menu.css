@@ -220,4 +220,8 @@ footer{
         margin: auto;
         width: 80%;
     }
+
+    .menu__service {
+        width: 70%;
+    }
 }
