@@ -24,7 +24,6 @@ h3, .card__subtitle{
 }
 
 .btn{
-    /*box-shadow: 5px 5px 1px black;*/
     border-style: none;
 }
 
@@ -42,7 +41,7 @@ h2{
 }
 
 .icon--purple{
-    color: #9356DC;
+    color: var(--main-color);
 }
 
 /******loader*******/
@@ -62,12 +61,12 @@ h2{
 
 .loader {
     border: 12px solid #F6F6F6; 
-    border-top: 12px solid #9356DC; 
-    border-bottom: 12px solid #FF79DA;
+    border-top: 12px solid var(--main-color); 
+    border-bottom: 12px solid var(--main-bg-color); 
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    animation: spin 2.9s linear forwards;
+    animation: spin 2.5s linear forwards;
     opacity: 1;
 }
   
@@ -78,9 +77,9 @@ h2{
 }
 
 @keyframes spin-background {
-    0% { opacity: opacity(1);}
+    0% { opacity: 1;}
     80% {transform: scaleX(1); }
-    100% {opacity: opacity(0);}
+    100% {opacity: 0;}
     100% {transform: scaleX(0);}
     
 }
@@ -124,7 +123,7 @@ header a {
     gap: 10px;
 }
 
-.icon-location{
+.location__icon {
     align-self: center;
 }
 
@@ -161,18 +160,18 @@ header a {
     height: 50px;
     margin: 15px;
 
-    background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
+    background: var(--button-gradient, linear-gradient(175deg, var(--main-bg-color) 0%, var(--main-color) 100%));
     border-radius: 50px;
     border-style: none;
 }
 
 .discover button:hover, .commander:hover{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--main-color) -5.2%, var(--main-bg-color) 110.74%);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35); 
 }
 
 
-.discover button p, .commander p{
+.discover button span, .commander span{
     color: white;
     font-weight: normal;
     width: 100%;
@@ -212,7 +211,7 @@ header a {
 }
 
 
-.howTo__list span{
+.howTo__list--button .number{
     background-color: var(--main-color);
     border-radius: 50%;
     width: 20px;
@@ -272,7 +271,7 @@ header a {
     padding: 5px 3px;
 	font-size: 13px;
 	text-align: center;
-    background-color: #99E2D0;
+    background-color: var(--filter-bg-color);
     color: #008766;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
 
@@ -302,7 +301,7 @@ header a {
 
 }
 .like__on{
-    background: linear-gradient(0deg,#9356dc,#ff79da);
+    background: linear-gradient(0deg, var(--main-color), var(--main-bg-color));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -328,7 +327,7 @@ footer{
     padding: 20px;
 }
 
-.footer__titre{
+.footer__title{
     padding: 0;
     margin: 0;
     font-family: Shrikhand;
@@ -426,7 +425,7 @@ footer ul li{
         padding: 30px 25px;
     }
 
-    .footer__titre {
+    .footer__title {
         margin: 0;
         font-size: 20px;
         font-weight: 200;

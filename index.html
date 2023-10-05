@@ -13,39 +13,40 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/5c2a6a9a09.js" crossorigin="anonymous"></script>
 </head>
-<!---<div class="loader__background">
-    <div class="loader"></div>
-</div>--->
+
 
 <body>
+    <div class="loader__background">
+        <div class="loader"></div>
+    </div>
     <header>
         <div class="header__logo">
-            <img src="assets/images/logo/ohmyfood.png">
+            <img src="assets/images/logo/ohmyfood.png" alt="logo oh my food">
         </div>
     </header>
     <div class="location">
-        <i class="fa-solid fa-location-dot icon-location"></i>
+        <i class="fa-solid fa-location-dot location__icon"></i>
         <p>Paris, Belleville</p>
     </div>
     <section class="discover">
         <p class="discover__title">Réservez le menu qui vous convient</p>
         <p class="discover__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <button class="btn">
-            <p>Explorer nos restaurants</p>
+            <span>Explorer nos restaurants</span>
         </button>
     </section>
     <section class="howTo">
         <h2>Fonctionnement</h2>
         <div class="howTo__list">
-            <button class="howTo__list--button btn"><span>1</span><i
+            <button class="howTo__list--button btn"><span class="howTo__list--button number">1</span><i
                     class="fa-solid fa-mobile-screen-button icon--grey"></i>
-                <p>Choisissez un restaurant</p>
+                <span>Choisissez un restaurant</span>
             </button>
-            <button class="howTo__list--button btn"><span>2</span><i class="fa-solid fa-bars icon--grey"></i>
-                <p>Composez votre menu</p>
+            <button class="howTo__list--button btn"><span class="howTo__list--button number">2</span><i class="fa-solid fa-bars icon--grey"></i>
+                <span>Composez votre menu</span>
             </button>
-            <button class="howTo__list--button btn"><span>3</span><i class="fa-solid fa-store icon--purple"></i>
-                <p>Dégustez au restaurant</p>
+            <button class="howTo__list--button btn"><span class="howTo__list--button number">3</span><i class="fa-solid fa-store icon--purple"></i>
+                <span>Dégustez au restaurant</span>
             </button>
         </div>
     </section>
@@ -55,7 +56,7 @@
             <a href="./restaurants/menu-palette.html" class="card">
                 <img class="card__img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                     alt="Table de convive avec focus sur assiette de poisson gastronomique">
-                <h3 class="card-title">La palette du goût</h3>
+                <h3 class="card__title">La palette du goût</h3>
                 <p class="card__subtitle">Ménilmontant</p>
                 <div class="like">
                     <i class="fa-regular fa-heart like__off"></i>
@@ -68,7 +69,7 @@
             <a href="./restaurants/menu-enchantee.html" class="card">
                 <img class="card__img" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant deux lits">
-                <h3 class="card-title">La note enchantée</h3>
+                <h3 class="card__title">La note enchantée</h3>
                 <p class="card__subtitle">Charonne</p>
                 <div class="like">
                     <i class="fa-regular fa-heart like__off"></i>
@@ -78,10 +79,10 @@
                     <p>Nouveau</p>
                 </div>
             </a>
-            <a href="./restaurants/menu-francaise.html" href="#" class="card">
+            <a href="./restaurants/menu-francaise.html" class="card">
                 <img class="card__img" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant deux lits">
-                <h3 class="card-title">A la française</h3>
+                <h3 class="card__title">A la française</h3>
                 <p class="card__subtitle">Cité rouge</p>
                 <div class="like">
                     <i class="fa-regular fa-heart like__off"></i>
@@ -92,7 +93,7 @@
                 <img class="card__img"
                     src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant deux lits">
-                <h3 class="card-title">Le délice des sens</h3>
+                <h3 class="card__title">Le délice des sens</h3>
                 <p class="card__subtitle">Folie-Méricourt</p>
                 <div class="like">
                     <i class="fa-regular fa-heart like__off"></i>
@@ -102,7 +103,7 @@
         </div>
     </section>
     <footer>
-        <h1 class="footer__titre">ohmyfood</h1>
+        <h1 class="footer__title">ohmyfood</h1>
         <ul>
             <li><i class="fa-solid fa-utensils icon-space"></i>Proposer un restaurant</li>
             <li><i class="fa-solid fa-handshake-angle icon-space"></i>Devenir partenaire</li>
