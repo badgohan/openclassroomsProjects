@@ -18,24 +18,7 @@ body{
     padding: 14px 89px 13px 65px;
 }
 
-.title{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 
-h1{
-    font-size: 28px;
-    font-weight: 400;
-    font-family: Shrikhand;
-
-}
-
-.like--menu{
-    align-self: center;
-    width: 22px;
-    height: 21px; 
-}
 
 .image__presentation img{
     width: 100%;
@@ -52,6 +35,26 @@ h1{
     background-color: #F6F6F6;
     position: relative;
     bottom: 30px;
+}
+
+.menu__title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Shrikhand;
+    width: 90%;
+
+}
+
+.like__menu{
+    position: absolute;
+    top: 36px;
+    right: 35px;
 }
 
 .menu__service{
@@ -132,8 +135,7 @@ footer{
     animation: fadeIn 2s ease-in-out forwards; /*Pourquoi forwards ne nous met pas à 0 d'opacity????*/
 }
 
-
-/**************Comment optimiser***************/
+/********************   Animation fondu *****************/
 
 .fondu__entrees:nth-child(1){
     animation-delay: 0s;
@@ -149,6 +151,10 @@ footer{
 
 .fondu__entrees:nth-child(4){
     animation-delay: 1.5s;
+}
+
+.fondu__entrees:nth-child(5){
+    animation-delay: 1.7s;
 }
 
 .fondu__plats:nth-child(1){
@@ -189,11 +195,43 @@ footer{
 
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Commencez avec une opacité de 0 (transparent) */ 
-        transform: translateY(20px); /* Commencez en bas */
+        opacity: 0; 
+        transform: translateY(20px); 
     }
     100% {
-        opacity: 1; /* Terminez avec une opacité de 1 (complètement opaque) */
-        transform: translateY(0); /* Terminez à la position d'origine */
+        opacity: 1; 
+        transform: translateY(0); 
     }
+}
+
+@media screen and (min-width: 768px) {
+
+    .image__presentation {
+        height: 383px;
+    }
+
+    .image__presentation img {
+        height: 383px;
+        object-fit: cover;
+    }
+    
+    .menu {
+        margin: auto;
+        width: 80%;
+    }
+
+    .menu__service {
+        width: 70%;
+    }
+
+    .menu__title{
+        max-width: 307px;
+    }
+
+    .like__menu {
+        position: relative;
+        right: 0;
+    }
+
+    
 }
