@@ -18,27 +18,6 @@ body{
     padding: 14px 89px 13px 65px;
 }
 
-.title{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-h1{
-    font-size: 28px;
-    font-weight: 400;
-    font-family: Shrikhand;
-    width: 90%;
-
-}
-
-.like__menu{
-    width: 22px;
-    height: 21px; 
-    position: absolute;
-    top: 36px;
-    right: 30px;
-}
 
 
 .image__presentation img{
@@ -56,6 +35,26 @@ h1{
     background-color: #F6F6F6;
     position: relative;
     bottom: 30px;
+}
+
+.menu__title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Shrikhand;
+    width: 90%;
+
+}
+
+.like__menu{
+    position: absolute;
+    top: 36px;
+    right: 35px;
 }
 
 .menu__service{
@@ -223,5 +222,14 @@ footer{
 
     .menu__service {
         width: 70%;
+    }
+
+    .menu__title{
+        max-width: 307px;
+    }
+    
+    .like__menu {
+        position: relative;
+        right: 0;
     }
 }
