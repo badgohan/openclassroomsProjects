@@ -28,14 +28,18 @@ h1{
     font-size: 28px;
     font-weight: 400;
     font-family: Shrikhand;
+    width: 90%;
 
 }
 
-.like--menu{
-    align-self: center;
+.like__menu{
     width: 22px;
     height: 21px; 
+    position: absolute;
+    top: 36px;
+    right: 30px;
 }
+
 
 .image__presentation img{
     width: 100%;
@@ -189,11 +193,28 @@ footer{
 
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Commencez avec une opacité de 0 (transparent) */ 
-        transform: translateY(20px); /* Commencez en bas */
+        opacity: 0; 
+        transform: translateY(20px); 
     }
     100% {
-        opacity: 1; /* Terminez avec une opacité de 1 (complètement opaque) */
-        transform: translateY(0); /* Terminez à la position d'origine */
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .image__presentation {
+        height: 383px;
+    }
+
+    .image__presentation img {
+        height: 383px;
+        object-fit: cover;
+    }
+    
+    .menu {
+        margin: auto;
+        width: 80%;
     }
 }
