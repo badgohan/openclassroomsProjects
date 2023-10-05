@@ -142,55 +142,55 @@ footer{
 }
 
 .fondu__entrees:nth-child(2){
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 
 .fondu__entrees:nth-child(3){
-    animation-delay: 1s;
+    animation-delay: 0.4s;
 }
 
 .fondu__entrees:nth-child(4){
-    animation-delay: 1.5s;
+    animation-delay: 0.6s;
 }
 
 .fondu__entrees:nth-child(5){
-    animation-delay: 1.7s;
+    animation-delay: 0.8s;
 }
 
 .fondu__plats:nth-child(1){
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .fondu__plats:nth-child(2){
-    animation-delay: 2.5s;
+    animation-delay: 1.2s;
 }
 
 .fondu__plats:nth-child(3){
-    animation-delay: 3s;
+    animation-delay: 1.4s;
 }
 
 .fondu__plats:nth-child(4){
-    animation-delay: 3.5s;
+    animation-delay: 1.6s;
 }
 
 .fondu__desserts:nth-child(1){
-    animation-delay: 4s;
+    animation-delay: 1.8s;
 }
 
 .fondu__desserts:nth-child(2){
-    animation-delay: 4.5s;
+    animation-delay: 2s;
 }
 
 .fondu__desserts:nth-child(3){
-    animation-delay: 5s;
+    animation-delay: 2.2s;
 }
 
 .fondu__desserts:nth-child(4){
-    animation-delay: 5.5s;
+    animation-delay: 2.4s;
 }
 
 .commander{
-    animation-delay: 6s;
+    animation-delay: 2.6s;
 }
 
 @keyframes fadeIn {
