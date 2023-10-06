@@ -130,11 +130,13 @@ h2{
 }
 
 .list--button--check {
-    width: 10%;
+    display: none;
+    width: 20%;
     background-color: #99E2D0;
-    display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 400ms;
+    opacity: 0;
 }
 
 .fa-circle-check {
@@ -142,6 +144,19 @@ h2{
     text-align: center;
     width: 14px;
 }
+
+.list--button:hover > .list--button--check {
+    display: flex;
+    animation: checked 800ms forwards;
+}
+
+@keyframes checked {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
 .commander{
     margin-top: 30px;
 }
