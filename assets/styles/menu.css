@@ -129,10 +129,11 @@ footer{
 }
 
 /**********Animation fondu à l'ouverture de la page*********/
+
 .fondu__entrees, .fondu__plats, .fondu__desserts, .commander{
     opacity: 0;
-    transform: translateY(20px); /* Translatez l'élément vers le bas de 20px */
-    animation: fadeIn 2s ease-in-out forwards; /*Pourquoi forwards ne nous met pas à 0 d'opacity????*/
+    transform: translateY(20px); 
+    animation: fadeIn 2s ease-in-out forwards; 
 }
 
 /********************   Animation fondu *****************/
