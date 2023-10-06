@@ -102,8 +102,9 @@ h2{
 .list--button--titles {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 60%;
     padding: 15px 0 15px 15px;
+    margin-right: 10px;
 }
 
 .list--button--title{
@@ -111,6 +112,9 @@ h2{
     font-size: 18px;
     font-family: roboto;
     font-weight: 500;
+    overflow: clip;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .list--button--subtitle{
@@ -119,6 +123,9 @@ h2{
     height: 19px;
     font-weight: 300;
     font-size: 15px;
+    overflow: clip;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .list--button--price{
