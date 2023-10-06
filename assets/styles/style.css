@@ -36,12 +36,8 @@ h2{
     margin: 0;
 }
 
-.icon--grey{
+.icon--color{
     color: gray;
-}
-
-.icon--purple{
-    color: var(--main-color);
 }
 
 /******loader*******/
@@ -206,8 +202,12 @@ header a {
 }
 
 .howTo__list--button:hover{
-    background-color: #ffffff;
+    background-color: #eee6fa;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); 
+}
+
+.howTo__list--button:hover > .icon--color {
+    color: var(--main-color);
 }
 
 
