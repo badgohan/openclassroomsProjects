@@ -102,8 +102,9 @@ h2{
 .list--button--titles {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     padding: 15px 0 15px 15px;
+    margin-right: 10px;
 }
 
 .list--button--title{
