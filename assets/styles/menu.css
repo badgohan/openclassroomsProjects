@@ -158,8 +158,14 @@ h2{
 }
 
 @keyframes checked {
-    0% {opacity: 0;}
-    100%{opacity: 1;}
+    0% {opacity: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        }
+    100%{opacity: 1;
+        transform: scaleX(1);
+        transform-origin: right;
+    }
 }
 
 
