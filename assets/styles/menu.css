@@ -86,15 +86,24 @@ h2{
 
 .list--button{
     display: flex;
-    flex-direction: column;
     border-radius: 20px;
+    
+	padding: 0;
+	overflow: hidden;
+    justify-content: space-between;
 
     background-color: white;
-    padding: 15px;
     width: 90%;
     text-align: start;
     height: 69px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.list--button--titles {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 15px 0 15px 15px;
 }
 
 .list--button--title{
@@ -120,6 +129,19 @@ h2{
     font-weight: 700; 
 }
 
+.list--button--check {
+    width: 10%;
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-circle-check {
+    color: white;
+    text-align: center;
+    width: 14px;
+}
 .commander{
     margin-top: 30px;
 }
